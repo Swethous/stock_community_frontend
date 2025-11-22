@@ -1,3 +1,4 @@
+// src/api/health.ts
 import { apiClient } from "./client";
 
 export type Health = {
