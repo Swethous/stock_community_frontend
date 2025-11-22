@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div style={{ padding: "24px", fontFamily: "system-ui, sans-serif" }}>
-      <h1>Stock Community Frontend Test</h1>
+      <h1>Stock Community Frontend Test public</h1>
       <p>Rails API와 연결 테스트 중...</p>
 
       {loading && <p>불러오는 중...</p>}
