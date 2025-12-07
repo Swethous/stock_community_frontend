@@ -1,0 +1,186 @@
+/* 전체 페이지 */
+.AuthPage {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;   /* 흰색 (기본) */
+}
+
+/* 가운데 고정 너비 컨테이너 */
+.AuthPage__container {
+  width: 100%;
+  max-width: 420px;     /* 너비 제한 */
+  margin: 0 auto;       /* 좌우 항목 가운데 정렬 */
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.AuthPage__title {
+  font-size: 24px;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 24px auto;
+}
+
+/* ===== 폼 그룹 ===== */
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.FormGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.FormLabel {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.FormInput {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* ===== 옵션 영역 ===== */
+.FormOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -4px;
+}
+
+.FormCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.FormLink {
+  font-size: 13px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.FormLink:hover {
+  text-decoration: underline;
+}
+
+/* ===== 버튼 ===== */
+.PrimaryButton {
+  margin-top: 8px;
+  width: 100%;
+  padding: 12px 0;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Google button */
+.GoogleButton {
+  width: 100%;
+  padding: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.GoogleIcon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Divider */
+.Divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #aaa;
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.Divider::before,
+.Divider::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+/* Footer 링크 */
+.FormFooter {
+  font-size: 13px;
+  text-align: center;
+}
+
+.FormFooter .Strong {
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.AuthPage__subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 24px;
+}
+
+/* ===== PasswordField 전용 ===== */
+.PasswordField__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.PasswordField__input {
+  padding-right: 40px; /* 👁️ 아이콘 들어갈 공간 확보 */
+}
+
+/* 아이콘 버튼을 인풋 내부에 배치 */
+.PasswordField__toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PasswordField__icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.7;
+}
+
+.PasswordField__icon:hover {
+  opacity: 1;
+}

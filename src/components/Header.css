@@ -1,0 +1,84 @@
+/* src/components/Header.css */
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  height: 56px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* 왼쪽 브랜드 영역 */
+.Header__left {
+  display: flex;
+  align-items: center;
+}
+
+.Header__brandButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.Header__logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.Header__title {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* 오른쪽 영역 */
+.Header__right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 아이콘 버튼 */
+.Header__iconButton {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.Header__iconButton:hover {
+  background-color: #f2f2f2;
+}
+
+.Header__iconImage {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* 로그인 링크 (로그인 전) */
+.Header__loginLink {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+.Header__loginLink:hover {
+  text-decoration: underline;
+}
