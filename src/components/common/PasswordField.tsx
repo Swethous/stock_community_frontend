@@ -1,9 +1,9 @@
-// src/components/PasswordField.tsx
+// src/components/common/PasswordField.tsx
 import type { FC, ChangeEvent } from "react";
 import { useState } from "react";
 
-import EyeOpenIcon from "../assets/icons/eye-open.png";     // 뜬 눈
-import EyeClosedIcon from "../assets/icons/eye-closed.png"; // 감은 눈
+import EyeOpenIcon from "../../assets/icons/eye-open.png";     // 뜬 눈
+import EyeClosedIcon from "../../assets/icons/eye-closed.png"; // 감은 눈
 
 type PasswordFieldProps = {
   label: string;

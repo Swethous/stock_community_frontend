@@ -1,7 +1,6 @@
 // src/api/auth.ts
 import { apiClient } from "./client";
 
-// 👉 이 경로들은 네 Rails 라우트에 맞게 나중에 바꿔도 됨
 const AUTH_PATHS = {
   login: "/api/v1/login",
   logout: "/api/v1/logout",

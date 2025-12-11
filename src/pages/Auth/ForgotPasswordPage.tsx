@@ -1,7 +1,7 @@
 // src/pages/ForgotPasswordPage.tsx
 import { useState } from "react";
-import Header from "../components/Header";
-import InputField from "../components/InputField";
+import Header from "../../components/layout/Header";
+import InputField from "../../components/common/InputField";
 import "./AuthPage.css";
 
 const ForgotPasswordPage = () => {

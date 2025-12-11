@@ -1,11 +1,11 @@
 // src/pages/LoginPage.tsx
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
-import PasswordField from "../components/PasswordField";
-import InputField from "../components/InputField";
-import { loginApi } from "../api/auth";
-import { useAuth } from "../contexts/AuthContext";   // ✅ 추가
+import Header from "../../components/layout/Header";
+import PasswordField from "../../components/common/PasswordField";
+import InputField from "../../components/common/InputField";
+import { loginApi } from "../../api/auth";
+import { useAuth } from "../../contexts/AuthContext";   // ✅ 추가
 import "./AuthPage.css";
 
 const LoginPage = () => {
