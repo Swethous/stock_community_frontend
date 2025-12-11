@@ -1,10 +1,10 @@
 // src/pages/RegisterPage.tsx
 import { useState } from "react";
-import Header from "../components/Header";
-import InputField from "../components/InputField";
+import Header from "../../components/layout/Header";
+import InputField from "../../components/common/InputField";
 import "./AuthPage.css";
-import PasswordField from "../components/PasswordField";
-import { registerApi } from "../api/auth";
+import PasswordField from "../../components/common/PasswordField";
+import { registerApi } from "../../api/auth";
 import { useNavigate } from "react-router-dom";
 
 const RegisterPage = () => {
